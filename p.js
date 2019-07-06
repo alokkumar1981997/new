@@ -12,6 +12,6 @@ async function f() {
   }
   
   f2()
-  
+
   
   
