@@ -1,0 +1,17 @@
+async function f() {
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("done!"), 1000)
+      });
+    
+      let result = await promise; // wait till the promise resolves (*)
+    console.log(result)
+  }
+  async function f2(){
+ await f()
+ console.log('hi')
+  }
+  
+  f2()
+  
+  
+  
